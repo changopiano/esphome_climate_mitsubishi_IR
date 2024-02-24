@@ -4,7 +4,7 @@
 namespace esphome {
 namespace mitsubishi_ir {
 
-static const char *const TAG = "mitsubishi_ir.climate";
+static const char *const TAG = "climate.mitsubishi_ir";
 
 const uint32_t MITSUBISHI_IR_OFF = 0x00;
 
