@@ -3,10 +3,10 @@ import esphome.config_validation as cv
 from esphome.components import climate_ir
 from esphome.const import CONF_ID
 
-CODEOWNERS = ["@RubyBailey"]
+CODEOWNERS = ["@changopiano"]
 AUTO_LOAD = ["climate_ir"]
 
-mitsubishi_ns = cg.esphome_ns.namespace("mitsubishi")
+mitsubishi_ns = cg.esphome_ns.namespace("mitsubishi_ir")
 MitsubishiClimate = mitsubishi_ns.class_("MitsubishiClimate", climate_ir.ClimateIR)
 
 CONFIG_SCHEMA = climate_ir.CLIMATE_IR_SCHEMA.extend(
