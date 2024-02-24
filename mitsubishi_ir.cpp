@@ -1,4 +1,4 @@
-#include "mitsubishi_.h"
+#include "mitsubishi_ir.h"
 #include "esphome/core/log.h"
 
 namespace esphome {
