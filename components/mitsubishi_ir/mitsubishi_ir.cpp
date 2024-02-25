@@ -22,7 +22,7 @@ namespace esphome {
     const uint16_t MITSUBISHI_IR_HEADER_SPACE = 1700;
     const uint16_t MITSUBISHI_IR_MIN_GAP = 17500;
     
-    void MitsubishiClimate::transmit_state() {
+    void MitsubishiIRClimate::transmit_state() {
       uint32_t remote_state[18] = {0x23, 0xCB, 0x26, 0x01, 0x00, 0x20, 0x08, 0x00, 0x30,
                                    0x58, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
     
