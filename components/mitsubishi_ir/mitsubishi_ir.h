@@ -11,9 +11,9 @@ namespace esphome {
   const uint8_t MITSUBISHI_IR_TEMP_MIN = 16;  // Celsius
   const uint8_t MITSUBISHI_IR_TEMP_MAX = 31;  // Celsius
   
-  class MitsubishiClimate : public climate_ir::ClimateIR {
+  class MitsubishiIRClimate : public climate_ir::ClimateIR {
    public:
-    MitsubishiClimate() : climate_ir::ClimateIR(MITSUBISHI_IR_TEMP_MIN, MITSUBISHI_IR_TEMP_MAX) {}
+    MitsubishiIRClimate() : climate_ir::ClimateIR(MITSUBISHI_IR_TEMP_MIN, MITSUBISHI_IR_TEMP_MAX) {}
   
    protected:
     /// Transmit via IR the state of this climate controller.
