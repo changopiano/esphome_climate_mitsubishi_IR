@@ -7,11 +7,11 @@ CODEOWNERS = ["@changopiano"]
 AUTO_LOAD = ["climate_ir"]
 
 mitsubishi_ns = cg.esphome_ns.namespace("mitsubishi_ir")
-MitsubishiClimate = mitsubishi_ns.class_("MitsubishiClimate", climate_ir.ClimateIR)
+MitsubishiIRClimate = mitsubishi_ns.class_("MitsubishiIRClimate", climate_ir.ClimateIR)
 
 CONFIG_SCHEMA = climate_ir.CLIMATE_IR_SCHEMA.extend(
     {
-        cv.GenerateID(): cv.declare_id(MitsubishiClimate),
+        cv.GenerateID(): cv.declare_id(MitsubishiIRClimate),
     }
 )
 
